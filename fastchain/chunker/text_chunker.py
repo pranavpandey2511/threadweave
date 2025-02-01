@@ -155,7 +155,7 @@ class TextChunker(BaseModel):
 #     page_id: Optional[UUID4]
 #
 #     # _chunk_count: int = Field(default=0)
-#     _chunks: DocList = Field(deafult=DocList[TextChunk]())
+#     _chunks: DocList = Field(default=DocList[TextChunk]())
 #
 #     def create_chunks(self, text: Union[List[str], str])-> DocList[TextChunk]:
 #         """Initialize with parameters."""

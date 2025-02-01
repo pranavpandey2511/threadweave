@@ -14,8 +14,21 @@ from fastchain.document.chunk.schema import CodeChunk
 from fastchain.document.base import Document, Page, Metadata, Chunk
 
 
+extension_to_language = {
+    "mjs": "tsx",
+    "py": "python",
+    "rs": "rust",
+    "go": "go",
+    "java": "java",
+    "cpp": "cpp",
+}
 
+
+import os
+
+import re
 class ProgrammingLanguage(str, Enum):
+
     """
     Enumeration for all programming languages that are supported
     """
@@ -40,19 +53,6 @@ class ProgrammingLanguage(str, Enum):
     LATEX = "latex"
     HTML = "html"
     CSHARP = "csharp"
-
-
-extension_to_language = {
-    "mjs": "tsx",
-    "py": "python",
-    "rs": "rust",
-    "go": "go",
-    "java": "java",
-    "cpp": "cpp",
-}
-
-import os
-import re
 import subprocess
 
 
@@ -217,7 +217,7 @@ class CodeChunker(Chunker):
             )
 
             for span in spans:
-                chnk=CodeChunk(content=span.extract(content))
+                chunk=CodeChunk(content=span.extract(content))
                 all_chunks.append(chnk)
                 self.chunks.append(
                     chnk
