@@ -8,13 +8,13 @@ from unidecode import unidecode
 from datetime import datetime
 import logging
 
-from fastchain.dataloaders.chunkers.token_chunker import (
+from threadweave.dataloaders.chunkers.token_chunker import (
     chunk_text_by_token_limit,
 )
 from .base import BaseDataloader
 from docarray.array import DocList, DocVec
-from fastchain.document.base import Document, Page, Metadata
-from fastchain.document.chunk.schema import (
+from threadweave.document.base import Document, Page, Metadata
+from threadweave.document.chunk.schema import (
     TextChunk,
     ImageChunk,
     FigureCaptionChunk,

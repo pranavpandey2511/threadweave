@@ -3,9 +3,9 @@ from typing import List, Type, Callable, Optional
 from pydantic import BaseModel, Field, ValidationError, validator
 from enum import Enum
 
-from fastchain.chunker.utils import num_tokens_from_string
-from fastchain.constants import MAX_CHUNK_SIZE_TOKENS
-from fastchain.document.chunk.schema import Chunk
+from threadweave.chunker.utils import num_tokens_from_string
+from threadweave.constants import MAX_CHUNK_SIZE_TOKENS
+from threadweave.document.chunk.schema import Chunk
 import re
 
 

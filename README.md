@@ -1,7 +1,7 @@
-![GitHub Repo stars](https://img.shields.io/github/stars/pranavpandey2511/fastchain?logo=github)
+![GitHub Repo stars](https://img.shields.io/github/stars/pranavpandey2511/threadweave?logo=github)
 ![Discord](https://img.shields.io/discord/1127131856911994971?style=flat&logo=discord&label=Fastchain&link=https%3A%2F%2Fdiscord.gg%2FsVz5sa97Xk)
 
-# 🚀 🔗 Fastchain - Fastest way to build LLM powered agents
+# 🚀 🔗 Threadweave - Fastest way to build LLM powered agents
 
 `FASTCHAIN is work in progress!!`
 
@@ -17,7 +17,7 @@ Fastchain is a library which helps you build production grade LLM powered agents
 ### Installation
 
 ```
-pip install fastchain
+pip install threadweave
 ```
 
 ### How to use
@@ -25,9 +25,9 @@ pip install fastchain
 #### Create an app first
 
 ```python
-from fastchain import FastChainApp
+from threadweave import ThreadWeaveApp
 
-app = FastChainApp()
+app = ThreadWeaveApp()
 
 ```
 
@@ -57,9 +57,9 @@ app.index()
 
 fastchain provides you with multiple high level APIs, we will explain them one by one how and where you can use each one.
 
-### Fastchain
+### ThreadWeave
 
-`fastchain` the highest level api that you can use to get started
+`threadweave` is the highest level api that you can use to get started
 
 ```
 from chainsaw import fastchain

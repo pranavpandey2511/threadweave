@@ -9,9 +9,9 @@ from tenacity import (
     stop_after_attempt,
     wait_random_exponential,
 )
-from fastchain.embedding.base import DEFAULT_EMBED_BATCH_SIZE, BaseEmbedding
-from fastchain.llms.openai_utils import validate_openai_api_key
-from fastchain.document.base import Document
+from threadweave.embedding.base import DEFAULT_EMBED_BATCH_SIZE, BaseEmbedding
+from threadweave.llms.openai_utils import validate_openai_api_key
+from threadweave.document.base import Document
 import numpy as np
 
 EMB_TYPE = np.ndarray

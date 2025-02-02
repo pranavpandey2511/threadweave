@@ -28,7 +28,7 @@ from docarray.typing import (
     AudioBytes,
 )
 
-from fastchain.document.chunk.base import Chunk
+from threadweave.document.chunk.base import Chunk
 
 class Metadata(BaseDoc):
     """Metadata class for documents."""

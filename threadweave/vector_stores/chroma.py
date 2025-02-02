@@ -1,8 +1,8 @@
 import chromadb
 from typing import Union
 from docarray import DocList
-from fastchain.chunker.schema import Chunk
-from fastchain.vector_stores.base import VectorStore
+from threadweave.chunker.schema import Chunk
+from threadweave.vector_stores.base import VectorStore
 
 
 

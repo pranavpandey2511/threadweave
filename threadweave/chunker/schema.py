@@ -3,8 +3,8 @@ from typing import List, Type, Callable
 from pydantic import BaseModel, Field, ValidationError, validator
 from enum import Enum
 
-from fastchain.dataloaders.utils import num_tokens_from_string
-from fastchain.constants import MAX_CHUNK_SIZE_TOKENS
+from threadweave.dataloaders.utils import num_tokens_from_string
+from threadweave.constants import MAX_CHUNK_SIZE_TOKENS
 
 ChunkType = Enum("ChunkType", ["TEXT", "CODE", "TOKENS"])
 

@@ -9,7 +9,7 @@ from docx.table import Table as DocxTable
 from docx.text.paragraph import Paragraph
 from docx.text.run import Run
 
-from fastchain.dataloaders.base import BaseDataloader
+from threadweave.dataloaders.base import BaseDataloader
 
 
 class DocXDataLoader(BaseDataloader):

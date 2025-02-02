@@ -2,11 +2,11 @@
 import os
 from typing import Callable, List, Optional, Union
 
-from fastchain.document.chunk.base import Chunk
-from fastchain.document.chunk.schema import TextChunk
-from fastchain.chunker.base import Chunker, Span
-from fastchain.constants import *
-from fastchain.dataloaders.utils import num_tokens_from_string
+from threadweave.document.chunk.base import Chunk
+from threadweave.document.chunk.schema import TextChunk
+from threadweave.chunker.base import Chunker, Span
+from threadweave.constants import *
+from threadweave.dataloaders.utils import num_tokens_from_string
 import tiktoken
 from pydantic import BaseModel, Field, PrivateAttr
 import spacy
@@ -16,9 +16,9 @@ import re
 import logging
 import logging.config
 from dotenv import load_dotenv
-from fastchain.utils import num_tokens_from_string
+from threadweave.utils import num_tokens_from_string
 from docarray import DocList
-from fastchain.chunker.utils import num_tokens_from_string
+from threadweave.chunker.utils import num_tokens_from_string
 from uuid import UUID as UUID4
 
 load_dotenv()

@@ -2,8 +2,8 @@ import asyncio
 from abc import ABC, abstractmethod
 from typing import Callable, Optional, Dict, List
 import numpy as np
-from fastchain.document.base import Document
-from fastchain.document.chunk.base import Chunk
+from threadweave.document.base import Document
+from threadweave.document.chunk.base import Chunk
 
 EMB_TYPE = np.ndarray
 DEFAULT_EMBED_BATCH_SIZE = 10

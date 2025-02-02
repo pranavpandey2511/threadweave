@@ -1,4 +1,4 @@
-from fastchain.chunker.code_chunker import CodeChunker
+from threadweave.chunker.code_chunker import CodeChunker
 
 
 def test_code_chunker():

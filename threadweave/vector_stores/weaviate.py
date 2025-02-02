@@ -8,8 +8,8 @@ from docarray import DocList
 import os
 from dotenv import load_dotenv
 
-from fastchain.vector_stores.base import VectorStore
-from fastchain.document.chunk.base import Chunk
+from threadweave.vector_stores.base import VectorStore
+from threadweave.document.chunk.base import Chunk
 import logging
 
 logger = logging.getLogger(__name__)

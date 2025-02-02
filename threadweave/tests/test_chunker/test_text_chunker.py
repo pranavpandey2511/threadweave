@@ -1,5 +1,5 @@
-from fastchain.chunker.text_chunker import TextChunker
-from fastchain.constants import *
+from threadweave.chunker.text_chunker import TextChunker
+from threadweave.constants import *
 
 
 def test_text_chunker():

@@ -1,4 +1,4 @@
-from fastchain.document.chunk.base import Chunk
+from threadweave.document.chunk.base import Chunk
 from docarray.typing import (
     NdArray,
     NdArrayEmbedding,
@@ -23,8 +23,8 @@ from docarray.typing import (
     AudioBytes,
 )
 from pydantic import Field, ValidationError, validator
-from fastchain.utils import num_tokens_from_string
-from fastchain.constants import MAX_CHUNK_SIZE_TOKENS
+from threadweave.utils import num_tokens_from_string
+from threadweave.constants import MAX_CHUNK_SIZE_TOKENS
 
 
 class TextChunk(Chunk):

@@ -1,5 +1,5 @@
 from typing import List, Union, Optional, Dict
-from fastchain.dataloaders.base import BaseDataloader
+from threadweave.dataloaders.base import BaseDataloader
 import os
 import requests
 

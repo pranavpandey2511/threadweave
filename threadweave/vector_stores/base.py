@@ -3,7 +3,7 @@ from typing import Union
 
 from docarray import DocList
 
-from fastchain.chunker.schema import Chunk
+from threadweave.chunker.schema import Chunk
 
 
 class VectorStore(ABC):

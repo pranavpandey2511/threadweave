@@ -6,12 +6,12 @@ import subprocess
 from docarray.array import DocList
 
 from typing import Dict
-from fastchain.chunker.base import Chunker, Span
+from threadweave.chunker.base import Chunker, Span
 from tree_sitter import Parser, Language
 from dataclasses import dataclass
-from fastchain.chunker.utils import read_file_content
-from fastchain.document.chunk.schema import CodeChunk
-from fastchain.document.base import Document, Page, Metadata, Chunk
+from threadweave.chunker.utils import read_file_content
+from threadweave.document.chunk.schema import CodeChunk
+from threadweave.document.base import Document, Page, Metadata, Chunk
 
 
 extension_to_language = {

@@ -1,9 +1,9 @@
 import cohere
-from fastchain.embedding.base import BaseEmbedding
+from threadweave.embedding.base import BaseEmbedding
 import numpy as np
 from enum import Enum
 from typing import Any, Dict, List
-from fastchain.document.base import Document
+from threadweave.document.base import Document
 import os
 
 EMB_TYPE = np.ndarray
